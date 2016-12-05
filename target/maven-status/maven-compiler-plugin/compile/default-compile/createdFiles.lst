@@ -1,0 +1,5 @@
+com\thaivun01\evaluatorproject\MainApp.class
+com\thaivun01\evaluation\PostFixCalculator.class
+com\thaivun01\converters\InfixToPostfixConverter.class
+com\thaivun01\collections\CustomStack.class
+com\thaivun01\collections\CustomQueue.class
