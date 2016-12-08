@@ -37,7 +37,7 @@ public class PostFixCalculator {
      * @return The answer of the postfix operation
      */
     private CustomQueue<String> evaluatePostFix(CustomQueue<String>postfix){
-        CustomStack<String> numberStack = new CustomStack();;
+        CustomStack<String> numberStack = new CustomStack();
         CustomQueue<String> result = new CustomQueue();
         
         while (postfix.isEmpty() == false){
