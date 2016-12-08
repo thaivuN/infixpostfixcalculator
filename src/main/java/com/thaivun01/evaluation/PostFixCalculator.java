@@ -11,14 +11,11 @@ import com.thaivun01.converters.InfixToPostfixConverter;
  */
 public class PostFixCalculator {
 
-    
-    private CustomStack<String> numberStack;
 
     /**
      * Default Constructor.
      */
     public PostFixCalculator() {
-        this.numberStack = new CustomStack();
     }
     
     /**
@@ -40,7 +37,9 @@ public class PostFixCalculator {
      * @return The answer of the postfix operation
      */
     private CustomQueue<String> evaluatePostFix(CustomQueue<String>postfix){
+        CustomStack<String> numberStack = new CustomStack();;
         CustomQueue<String> result = new CustomQueue();
+        
         while (postfix.isEmpty() == false){
             String value = postfix.remove();
             if (isOperator(value)){
